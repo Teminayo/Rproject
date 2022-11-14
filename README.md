@@ -1,7 +1,3 @@
-# Rproject
-Method of data Analysis
-
-
 library(tidyverse)
 library(lessR)
 library(dplyr)
@@ -105,8 +101,8 @@ mean(Sales)
 t.test(Sales, mu=150, alternative = "less", conf=0.95)
 
 #0ne_wayAnova 
-aov(Profit~Region)
-oneway_anova <- aov(Profit~Region)
+aov(Profit$Region)
+oneway_anova <- aov(Profit$Region)
 summary(oneway_anova)
 
 #TWOWAY ANOVA
